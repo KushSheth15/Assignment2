@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <main>
+            <table border="2" cellpadding="20">
+                <tr>
+                    <th>RNO</th>
+                    <th>NAME</th>
+                    <th>AGE</th>
+                    <th>PIC</th>
+                    <th>UPDATE</th>
+                    <th>DELETE</th>
+                </tr>
+                <% data.forEach((item) => { %>
+                    <tr>
+                        <td><%= item.rno %></td>
+                        <td><%= item.name %></td>
+                        <td><%= item.age %></td>
+                        <td><img height="50" width="60" src="<%= item.pic %>" alt="nothing"></td>
+                        <td><a href="/update/<%= item._id %>">update</a></td>
+                        <td><a href="/delete/<%= item._id %>">delete</a></td>
+                    </tr>
+                <% }); %>
+            </table>
+        </main>
+    </body>
+</html>

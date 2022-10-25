@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <main>
+
+            <h1>Login Form</h1>
+
+            <form action="/login" method="post">
+                Enter username :- <input type="text" name="name" /><br/><br/>
+                Enter Password :- <input type="password" name="password"><br/><br/>
+                <input type="submit" value="Login" />
+            </form>
+
+            <h1>Registration Form</h1>
+            <form action="/insert" method="post" enctype="multipart/form-data">
+                Enter Rno :- <input type="text" name="rno" /><br/><br/>
+                Enter Name :- <input type="text" name="name" /><br/><br/>
+                Enter Age :- <input type="text" name="age" /><br/><br/>
+                Enter Password :- <input type="password" name="password" /><br/><br/>
+                Select Pic :- <input type="file" name="myfile" />
+                <input type="submit" value="UPLOAD" name="insert" /><br/><br/>
+                <input type="submit" value="INSERT" name="insert">
+            </form>
+            <form action="/showdata">
+                <input type="submit" value="Show-Data" />
+            </form>
+            
+        </main>
+    </body>
+</html>

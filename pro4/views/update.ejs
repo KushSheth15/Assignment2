@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <main>
+            <form action="/edit" method="post" enctype="multipart/form-data">
+                Update Rno :- <input type="text" name="rno" value="<%= data.rno %>"/><br/><br/>
+                Update Name :- <input type="text" name="name" value="<%= data.name %>"/><br/><br/>
+                Update Age :- <input type="text" name="age" value="<%= data.age %>"/><br/><br/>
+                Update Password :- <input type="password" name="password" value="<%= data.password %>"/><br/><br/>
+                Update Pic :- <input type="file" name="updatepic" />
+                <input type="hidden" value="<%= data._id %>" name="id" />
+                <input type="hidden" value="<%= data.pic %>" name="pic" />
+                <input type="submit" value="Upload" name="insert"><br/><br/>
+                <input type="submit" value="Update" name="insert" />
+            </form>
+        </main>
+    </body>
+</html>
